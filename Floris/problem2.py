@@ -10,7 +10,7 @@ def ExpandFiboList(fibonacciList, upperBound):
     if(fibonacciList[len(fibonacciList) - 1] + fibonacciList[len(fibonacciList) -2] > upperBound):
         return fibonacciList
     fibonacciList.append(fibonacciList[len(fibonacciList) - 1] + fibonacciList[len(fibonacciList) -2])
-    return ExpandFiboList(fibonacciList)
+    return ExpandFiboList(fibonacciList, upperBound)
 
 def SumEvenNumbers(numbers):
     sum = 0
